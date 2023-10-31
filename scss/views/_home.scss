@@ -1,0 +1,60 @@
+// seccion title container
+.title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-p {
+    font-size: 2.4em;
+    font-family: $font-principal;
+    font-weight: normal;
+    color: map-get($colors, text-color-primary);
+    line-height: 31px;
+    letter-spacing: 0.01em;
+    // padding: 5rem 50rem;
+    text-align: center;
+    width: 1000px;
+    margin: 5rem 0 3rem 0;
+}
+
+.home-title {
+    font-size: 3.6em;
+    font-family: $font-secondary;
+    font-style: normal;
+    font-weight: 400;
+    color: map-get($colors, font-color-primary);
+    text-align: center;
+    line-height: 49px;
+    letter-spacing: 0.01em;
+    margin-top: 3rem;
+     width: 450px;
+}
+
+
+//seccion sobre mi
+
+.sobre-mi {
+    @include flex(null, space-evenly, center);
+    margin-top: 5rem;
+
+    .info {
+        @include flex(column, null, null);
+        width: 30%;
+
+        &-title {
+            font-size: 2.4em;
+            font-family: $font-principal;
+            font-weight: normal;
+            color: map-get($colors, text-color-primary);
+            line-height: 31px;
+            letter-spacing: 0.01em;
+        }
+
+        .info-p {
+            @extend .info-title;
+            margin-top: 3rem;
+        }
+    }
+}

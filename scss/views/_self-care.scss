@@ -1,0 +1,36 @@
+.guia-lunar, .guia-ayurveda {
+    @include flex(row, null, center);
+    margin-bottom: 5rem;
+
+    &__content {
+        @include flex(column, null, center);
+    }
+
+    &__title {
+        @extend .home-title;
+        width: 100%;
+    }
+
+    &__description {
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+        padding: 0 5rem;
+        font-size: 1.5em;
+        // width: 300px;
+        // height: 152px;
+        color: map-get($colors, text-color-primary);
+        font-family: $font-principal;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 25.6px;
+        letter-spacing: 1%;
+    }
+}
+
+.guia-ayurveda {
+    margin-top: 5rem;
+}
+
+.menu-link__modifier {
+    color: #000;
+}

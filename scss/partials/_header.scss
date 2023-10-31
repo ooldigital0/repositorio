@@ -1,0 +1,40 @@
+header {
+    @include flex(null, center, center);
+    padding: 2rem 0 0 0;
+
+    .logo {
+        margin-left: 10rem;
+    }
+}
+
+.line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 3rem;
+}
+    .line span {
+        border: 0.979267px solid #E7D4B6;
+        width: 43%;
+    }
+
+.navbar {
+    flex-basis: 80%;
+    padding: 0 5rem;
+    margin-left: 5rem;
+}
+
+.menu {
+    @include flex(null, space-between, center);
+    gap: 100px;
+
+    &-item {
+        font-family: $font-principal;
+        font-size: 1.7em;
+    }
+
+    &-link {
+        color: map-get($colors, font-color-primary);
+    }
+}

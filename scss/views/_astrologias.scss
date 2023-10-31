@@ -1,0 +1,16 @@
+.astrologias {
+    @include flex(row, center, center);
+    &-content {
+        @include flex(column, null, center);
+        padding: 0 5rem;
+    }
+    &-title {
+        @extend .home-title;
+        width: 100%;
+    }
+    &-description {
+        @extend .description;
+        margin: 5rem 0 5rem 0;
+        padding: 0;
+    }
+}
