@@ -1,0 +1,624 @@
+@font-face {
+  font-family: "Lora-Regular";
+  src: url(../../public/fonts/Lora-Regular.ttf);
+}
+@font-face {
+  font-family: "Lora-Italic";
+  src: url(../../public/fonts/Lora-Italic.ttf);
+}
+@font-face {
+  font-family: "Cinzel-Medium";
+  src: url(../../public/fonts/Cinzel-Medium.ttf);
+}
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+/* normalize */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* globals */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #EBEDE7;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0 0 0;
+}
+header .logo {
+  margin-left: 10rem;
+}
+
+.line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 3rem;
+}
+
+.line span {
+  border: 0.979267px solid #E7D4B6;
+  width: 43%;
+}
+
+.navbar {
+  flex-basis: 80%;
+  padding: 0 5rem;
+  margin-left: 5rem;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
+}
+.menu-item {
+  font-family: "Lora-Regular";
+  font-size: 1.7em;
+}
+.menu-link {
+  color: #778690;
+}
+
+.footer-container {
+  font-family: "Lora-Regular";
+  color: #4A4A4A;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+footer {
+  position: relative;
+  width: 100%;
+  background: color #4A4A4A;
+  min-height: 100px;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+footer .social_icon,
+footer .footer-list {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+footer .social_icon li,
+footer .footer-list li {
+  list-style: none;
+}
+
+footer .social_icon li a {
+  font-size: 2em;
+  color: #2e0788;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+
+footer .social_icon li a:hover {
+  transform: translate(-10px);
+}
+
+footer .footer-list li a {
+  font-size: 1.2em;
+  color: #4A4A4A;
+  margin: 0 10px;
+  display: inline-block;
+  text-decoration: none;
+  opacity: 0.75;
+}
+
+.footer-list li {
+  display: inline;
+}
+
+footer .footer-list li a:hover {
+  opacity: 1;
+}
+
+.info-button {
+  background-color: #778690;
+  border: none;
+  border-radius: 120px;
+  align-self: center;
+  margin-top: 5rem;
+  padding: 2rem 0;
+}
+.info-button a {
+  padding: 2rem 5rem;
+  color: #fff;
+  font-family: "Cinzel-Medium";
+  font-size: 1.5em;
+  line-height: 22px;
+}
+
+.article-button {
+  background-color: #778690;
+  border: none;
+  border-radius: 120px;
+  align-self: center;
+  margin-top: 2rem;
+  padding: 2rem 0;
+}
+.article-button a {
+  padding: 2rem 5rem;
+  color: #fff;
+  font-family: "Cinzel-Medium";
+  font-size: 1.5em;
+  line-height: 22px;
+}
+
+.description, .astrologias-description {
+  margin: 5rem 0;
+  font-size: 2.4em;
+  font-family: "Lora-Regular";
+  font-weight: normal;
+  color: #4A4A4A;
+  line-height: 31px;
+  letter-spacing: 0.01em;
+  padding: 0 5rem;
+}
+
+.form-title {
+  font-size: 2.2em;
+  font-family: "Lora-Italic";
+  font-weight: normal;
+  color: #4A4A4A;
+  line-height: 31px;
+  letter-spacing: 0.01em;
+  text-align: center;
+  width: 1000px;
+  margin-top: 2.6rem;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.video-container video {
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.video-container .content {
+  text-align: center;
+  position: relative;
+}
+.video-container .content .logo-ingresar {
+  width: 425px;
+}
+@media screen and (max-width: 480px) {
+  .video-container .content .logo-ingresar {
+    width: 80vw;
+  }
+}
+.video-container .content .titulo-ingresar, .video-container .content .boton-ingresar, .video-container .content .titulo-ingresar__dos {
+  color: #fff;
+  font-size: 2.5em;
+  font-family: "Lora-Italic";
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.video-container .content .titulo-ingresar__dos {
+  top: 70%;
+}
+@media screen and (max-width: 480px) {
+  .video-container .content .titulo-ingresar, .video-container .content .boton-ingresar, .video-container .content .titulo-ingresar__dos {
+    font-size: 1.7em;
+    text-align: center;
+  }
+  .video-container .content .titulo-ingresar__dos {
+    top: 74%;
+  }
+}
+.video-container .content .boton-ingresar {
+  top: 85%;
+  left: 50%;
+  border: none;
+  border-radius: 120px;
+  font-family: "Cinzel-Medium";
+  font-size: 2em;
+  padding: 1.5rem 0;
+  background-color: #b1b9c6;
+}
+.video-container .content .boton-ingresar a {
+  color: white;
+  padding: 0 15rem;
+}
+@media screen and (max-width: 480px) {
+  .video-container .content .boton-ingresar {
+    padding: 8rem;
+  }
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  background-color: #EBEDE7;
+}
+
+.title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-title, .informes-title, .diseno-impulso__title, .sesiones-title, .tzolkin-title, .d-humano__title, .astrologias-title, .guia-lunar__title, .guia-ayurveda__title {
+  font-size: 2.6em;
+  font-family: "Cinzel-Medium";
+  font-style: normal;
+  font-weight: 400;
+  color: #778690;
+  text-align: center;
+  line-height: 49px;
+  letter-spacing: 0.01em;
+  margin-top: 4rem;
+  width: 550px;
+}
+
+.subtitle {
+  font-size: 2.2em;
+  font-family: "Lora-Italic";
+  font-weight: normal;
+  color: #4A4A4A;
+  line-height: 31px;
+  letter-spacing: 0.01em;
+  text-align: center;
+  width: 1000px;
+  margin-top: 2.6rem;
+}
+
+.home-p {
+  font-size: 2em;
+  font-family: "Lora-Regular";
+  font-weight: normal;
+  color: #4A4A4A;
+  line-height: 31px;
+  letter-spacing: 0.01em;
+  text-align: justify;
+  width: 750px;
+  margin: 5rem 0 3rem 0;
+}
+
+.footer-containter footer {
+  font-family: "Lora-Regular";
+  color: #4A4A4A;
+}
+
+footer {
+  position: relative;
+  width: 100%;
+  background: color #4A4A4A;
+  min-height: 100px;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+footer .social_icon,
+footer .menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+footer .social_icon li,
+footer .menu li {
+  list-style: none;
+}
+
+footer .social_icon li a {
+  font-size: 2em;
+  color: #2e0788;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+
+footer .social_icon li a:hover {
+  transform: translate(-10px);
+}
+
+footer .menu li a {
+  font-size: 1.2em;
+  color: #e00f0f;
+  margin: 0 10px;
+  display: inline-block;
+  text-decoration: none;
+  opacity: 0.75;
+}
+
+footer .menu li a:hover {
+  opacity: 1;
+}
+
+.guia-lunar, .guia-ayurveda {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+.guia-lunar__content, .guia-ayurveda__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.guia-lunar__title, .guia-ayurveda__title {
+  width: 100%;
+}
+.guia-lunar__description, .informes-description, .diseno-impulso__description, .sesiones-description, .d-humano__description, .guia-ayurveda__description {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  padding: 0 5rem;
+  font-size: 1.5em;
+  color: #4A4A4A;
+  font-family: "Lora-Regular";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25.6px;
+  letter-spacing: 1%;
+}
+
+.guia-ayurveda {
+  margin-top: 5rem;
+}
+
+.menu-link__modifier {
+  color: #000;
+}
+
+.astrologias {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.astrologias-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 5rem;
+}
+.astrologias-title {
+  width: 100%;
+}
+.astrologias-description {
+  margin: 5rem 0 5rem 0;
+  padding: 0;
+}
+
+.d-humano {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.d-humano__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 5rem;
+}
+.d-humano__title {
+  width: 100%;
+}
+.tzolkin {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+}
+.tzolkin-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tzolkin-title {
+  margin-top: 5rem;
+}
+
+.sesiones-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sesiones-description {
+  padding: 0 10rem;
+}
+
+.diseno-impulso {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10rem;
+}
+.diseno-impulso__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.diseno-impulso__title {
+  width: 100%;
+}
+.diseno-impulso__description {
+  padding: 0 10rem;
+}
+
+.diseno-impulso__articles {
+  display: flex;
+  margin-top: 10rem;
+  flex-wrap: wrap;
+}
+.diseno-impulso__articles .diseno, .diseno-impulso__articles .impulso {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1 clamp(500px, 30%, 600px);
+}
+.diseno-impulso__articles .impulso {
+  flex: 1 1 clamp(500px, 30%, 600px);
+}
+
+.informes {
+  display: flex;
+  align-items: center;
+  margin-top: 15rem;
+}
+.informes-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.informes-description {
+  padding: 0 10rem;
+}
+
+/* .body {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  grid-template-columns: 1fr;
+  min-height: 100vh;
+} */
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr; 
+  grid-gap: 20px; 
+  padding: 20px;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.menu-item {
+  margin-right: 20px;
+}
+
+main {
+  text-align: center;
+  padding: 20px;
+}
+
+
+.title-container {
+  margin-top: 20px;
+}
+
+.comunidad-title {
+  font-size: 24px;
+}
+
+.comunidad-p {
+  font-size: 16px;
+}
+
+.article-button {
+  background: #333; /* Button background color */
+  color: #fff; /* Button text color */
+  padding: 10px 20px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+/* .body {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  grid-template-columns: 1fr;
+  min-height: 100vh;
+} */
+
+.Comunidad {
+  text-align: center; /* Center align the content in the main section */
+  padding: 20px;
+}
+
+
+.form-title {
+  font-size: 2.2em;
+  font-family: "Lora-Italic";
+  font-weight: normal;
+  color: #4A4A4A;
+  line-height: 31px;
+  letter-spacing: 0.01em;
+  text-align: center;
+  width: 1000px;
+  margin-top: 2.6rem;
+}/*# sourceMappingURL=style.css.map */
+
+.suscripción-container {
+  font-size: 2em;
+  font-family: "Cinzel-Medium";
+  color: #8F8E8E;
+}
+  .form-title {
+    font-size: 1.5em;
+    font-family: "Lora-Italic";
+    font-weight: normal;
+    color: #4A4A4A;
+    line-height: 15px;
+    text-align: center;
+    width: 800px;
+    margin-top: 2.6rem;
+  }

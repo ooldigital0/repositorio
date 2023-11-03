@@ -1,0 +1,36 @@
+.info-button {
+    background-color: map-get($colors, font-color-primary);
+    border: none;
+    border-radius: 120px;
+    align-self: center;
+    margin-top: 5rem;
+    padding: 2rem 0;
+
+    & a {
+        padding: 2rem 5rem;
+        color: #fff;
+        font-family: $font-secondary;
+        font-size: 1.5em;
+        line-height: 22px;
+    }
+}
+
+.article-button {
+    background-color: map-get($colors, font-color-primary);
+    border: none;
+    border-radius: 120px;
+    align-self: center;
+    margin-top: 2rem;
+    padding: 2rem 0;
+    
+    & a {
+        padding: 2rem 5rem;
+        color: #fff;
+        font-family: $font-secondary;
+        font-size: 1.5em;
+        line-height: 22px;
+    }
+}
+
+
+    

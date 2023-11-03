@@ -1,0 +1,14 @@
+.d-humano {
+    @include flex(row, center, center);
+    &__content {
+        @include flex(column, null, center);
+        padding: 0 5rem;
+    }
+    &__title {
+        @extend .home-title;
+        width: 100%;
+    }
+    &__description {
+        @extend .guia-lunar__description;
+    }
+}

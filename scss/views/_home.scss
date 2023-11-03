@@ -1,0 +1,136 @@
+body {
+display: flex;
+min-height: 100vh;
+background-color: map-get($colors, bg-color)
+}
+
+.title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-title {
+    font-size: 2.6em;
+    font-family: $font-secondary;
+    font-style: normal;
+    font-weight: 400;
+    color: map-get($colors, font-color-primary);
+    text-align: center;
+    line-height: 49px;
+    letter-spacing: 0.01em;
+    margin-top: 4rem;
+    width: 550px;
+}
+
+.subtitle {
+    font-size: 2.2em;
+    font-family: $font-primary;
+    font-weight: normal;
+    color: map-get($colors, text-color-primary);
+    line-height: 31px;
+    letter-spacing: 0.01em;
+    // padding: 5rem 50rem;
+    text-align: center;
+    width: 1000px;
+    margin-top: 2.6rem;
+}
+
+.home-p {
+    font-size: 2em;
+    font-family: $font-principal;
+    font-weight: normal;
+    color: map-get($colors, text-color-primary);
+    line-height: 31px;
+    letter-spacing: 0.01em;
+    // padding: 5rem 50rem;
+    text-align: justify;
+    width: 750px;
+    margin: 5rem 0 3rem 0;
+}
+
+.footer-containter footer {
+    font-family: "Lora-Regular";
+    color: #4A4A4A;
+  }
+  
+  footer {
+    position: relative;
+    width: 100%;
+    background: color #4A4A4A;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  footer .social_icon,
+  footer .menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+  }
+  
+  footer .social_icon li,
+  footer .menu li {
+    list-style: none;
+  }
+  
+  footer .social_icon li a {
+    font-size: 2em;
+    color: #2e0788;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+  }
+  
+  footer .social_icon li a:hover {
+    transform: translate(-10px);
+  }
+  
+  footer .menu li a {
+    font-size: 1.2em;
+    color: #e00f0f;
+    margin: 0 10px;
+    display: inline-block;
+    text-decoration: none;
+    opacity: 0.75;
+  }
+  
+  footer .menu li a:hover {
+    opacity: 1;
+  }
+  
+
+
+//seccion a incluir quizá más adelante: sobre mi
+
+// .sobre-mi {
+//     @include flex(null, space-evenly, center);
+//     margin-top: 5rem;
+
+//     .info {
+//         @include flex(column, null, null);
+//         width: 30%;
+
+//         &-title {
+//             font-size: 2.4em;
+//             font-family: $font-principal;
+//             font-weight: normal;
+//             color: map-get($colors, text-color-primary);
+//             line-height: 31px;
+//             letter-spacing: 0.01em;
+//         }
+
+//         .info-p {
+//             @extend .info-title;
+//             margin-top: 3rem;
+//         }
+//     }
+// }

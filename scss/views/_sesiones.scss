@@ -1,0 +1,69 @@
+.sesiones {
+    &-content {
+        @include flex(column, null, center);
+    }
+
+    &-title {
+        @extend .home-title;
+    }
+
+    &-description {
+        @extend .guia-lunar__description;
+        padding: 0 10rem;
+    }
+}
+
+.diseno-impulso {
+    @include flex(column, center, center);
+    margin-top: 10rem;
+
+    &__content {
+        @include flex(column, null, center);
+
+    }
+
+    &__title {
+        @extend .home-title;
+        width: 100%
+    }
+
+    &__description {
+        @extend .guia-lunar__description;
+        padding: 0 10rem;
+    }
+}
+
+
+.diseno-impulso__articles {
+    display: flex;
+    margin-top: 10rem;
+    flex-wrap: wrap;
+
+    .diseno {
+        @include flex(column, null, center);
+        flex: 1 1 clamp(500px, 30%, 600px);
+    }
+
+    .impulso {
+        @extend .diseno;
+        flex: 1 1 clamp(500px, 30%, 600px);
+    }
+}
+
+.informes {
+    @include flex(null, null, center);
+    margin-top: 15rem;
+
+    &-content {
+        @include flex(column, center, center)
+    }
+
+    &-title {
+        @extend .home-title;
+    }
+
+    &-description {
+        @extend .guia-lunar__description;
+        padding: 0 10rem;
+    }
+}

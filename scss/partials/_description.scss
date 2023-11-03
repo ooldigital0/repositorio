@@ -1,0 +1,10 @@
+.description {
+    margin: 5rem 0;
+    font-size: 2.4em;
+    font-family: $font-principal;
+    font-weight: normal;
+    color: map-get($colors, text-color-primary);
+    line-height: 31px;
+    letter-spacing: 0.01em;
+    padding: 0 5rem;
+}

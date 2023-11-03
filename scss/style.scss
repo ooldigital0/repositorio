@@ -1,0 +1,31 @@
+//fonts
+@import './misc/_fonts';
+
+// variables
+@import './misc/_variables';
+
+//misc
+@import './misc/_mixins';
+@import './misc/_helpers';
+
+// globals
+@import './misc/_globals';
+
+// partials
+@import './partials/_header';
+@import './partials/_footer';
+@import './partials/_button';
+@import './partials/_description';
+@import './partials/_titles';
+@import './partials/_forms';
+
+//views
+@import './views/_intro';
+@import './views/_home';
+@import './views/_self-care';
+@import './views/_astrologias';
+@import './views/_d-humano';
+@import './views/_tzolkin';
+@import './views/_sesiones';
+@import './views/_comunidad';
+@import './views/_suscripcion'

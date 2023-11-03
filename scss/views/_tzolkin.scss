@@ -1,0 +1,11 @@
+.tzolkin {
+    @include flex(row, center, center);
+    margin-top: 5rem;
+    &-content {
+        @include flex(column, null, center);
+    }
+    &-title {
+        @extend .home-title;
+        margin-top: 5rem;
+    }
+}

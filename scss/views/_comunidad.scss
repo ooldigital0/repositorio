@@ -1,0 +1,49 @@
+main {
+  text-align: center;
+  padding: 20px;
+}
+
+.carpa {
+  max-width: 100%;
+  height: auto;
+}
+
+.title-container {
+  margin-top: 20px;
+}
+
+.comunidad-title {
+  font-size: 24px;
+}
+
+.comunidad-p {
+  font-size: 16px;
+}
+
+.article-button {
+  background: #333; /* Button background color */
+  color: #fff; /* Button text color */
+  padding: 10px 20px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.body {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  grid-template-columns: 1fr;
+  min-height: 100vh;
+}
+
+.Comunidad {
+  text-align: center; /* Center align the content in the main section */
+  padding: 20px;
+}
+
+/* Add more styles as needed */
+
