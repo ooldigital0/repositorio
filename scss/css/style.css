@@ -518,37 +518,47 @@ label {
 }
 /* Estilos para el input */
 input {
+  text-align: center;
   background-color: #DDDFD8;
   font-family: "Lora-Italic";
   font-size: 16px; /* Tamaño de fuente */
   border: 1px solid #DDDFD8; 
   border-radius: 5px; /* Radio de borde para hacerlo redondeado */
   padding: 10px; /* Espaciado interno del input */
-  width: 100%; /* Ancho del input, ajusta según tus necesidades */
   width: 365px;
+  outline: #b1b9c6;
 }
 
-input#consulta-form {
-  text-align: left;
+textarea {
+  height: 186px;
   background-color: #DDDFD8;
   font-family: "Lora-Italic";
-  font-size: 16px; /* Tamaño de fuente */
+  font-size: 16px; 
   border: 1px solid #DDDFD8; 
-  border-radius: 5px; /* Radio de borde para hacerlo redondeado */
-  padding: 80px; /* Espaciado interno del input */
-  width: 100%; /* Ancho del input, ajusta según tus necesidades */
+  border-radius: 5px; 
   width: 365px;
-  margin-bottom: 1.5vh;
+  outline: #b1b9c6;
+  resize: none;
+  padding: 10px;
 }
 
-/* Estilos para el placeholder */
-::placeholder {
+textarea ::placeholder {
   font-family: "Lora-Italic";
-  font-size:14px; /* Tamaño de fuente del placeholder */
+  font-size:16px; 
   color: #8F8E8E; 
   text-align: center;
-  /* Otros estilos que desees aplicar al placeholder */
+  padding: 10px
+  
 }
+ ::placeholder {
+  font-family: "Lora-Italic";
+  font-size:16px; 
+  color: #8F8E8E; 
+  text-align: center;
+  padding: 10px;
+}
+
+
 
 
 
@@ -609,4 +619,3 @@ input#consulta-form {
   height: 20vh;
   }
 
-  
