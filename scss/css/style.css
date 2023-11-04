@@ -445,6 +445,100 @@ video {
   align-self: center;
 }
 
+.heart {
+  width: 150px;
+  margin-top: 6.5vh;;
+  margin-bottom: 1vh; 
+  align-self: center;
+}
+.stars {
+  width: 150px;
+  margin-top: 1vh;;
+  margin-bottom: 0vh; 
+  align-self: center;
+}
+.bottle {
+  width: 350px;
+  margin-top: 0.7vh;; 
+  align-self: center;
+}
+.gracias-title {
+  text-align: center;
+  font-size: 2.4em;
+  font-family: "Cinzel-Medium";
+  font-weight: 400; 
+  color: #778690;
+  text-align: center;
+  margin-top: 1.5rem; 
+  width: 100%; 
+  max-width: 450px; 
+}
+.gracias-p {
+  font-size: 20px;
+  font-family: "Lora-Regular";
+  font-weight: 400;
+  color: #4A4A4A;
+  margin-top: 1rem; 
+  width: 100%; 
+  max-width: 450px; 
+  text-align: center;
+}
+.bienvenida-title {
+  text-align: center;
+  font-size: 1.7em;
+  font-family: "Lora-Italic";
+  font-weight: 400; 
+  color: #778690;
+  text-align: center;
+  margin-top: 4rem; 
+  width: 100%; 
+  max-width: 480px;
+  line-height: normal;
+}
+.bienvenida-p {
+  font-size: 1.4em;
+  font-family: "Lora-Regular";
+  font-weight: 400;
+  color: #778690;
+  margin-top: 1rem; 
+  width: 100%; 
+  max-width: 450px; 
+  text-align: center;
+}
+.welcome-logo {
+  width: 25vh;
+  margin-top: 0.7vh;; 
+  align-self: center;
+}
+
+.welcome-heart {
+  width: 135px;
+  margin-top: 1.3rem;
+  margin-bottom: 1vh; 
+  align-self: center;
+}
+.felicitaciones-title {
+  text-align: center;
+  font-size: 2.4em;
+  font-family: "Cinzel-Medium";
+  font-weight: 400; 
+  color: #778690;
+  text-align: center;
+  margin-top: 8vh; 
+  width: 100%; 
+  max-width: 450px; 
+}
+
+.felicitaciones-p {
+  font-size: 17px;
+  font-family: "Lora-Regular";
+  font-weight: 400;
+  color: #4A4A4A;
+  margin-top: 1rem; 
+  width: 100%; 
+  max-width: 450px; 
+  text-align: center;
+}
 
 .comunidad-title {
   font-size: 2.4em;
@@ -456,7 +550,6 @@ video {
   width: 100%; 
   max-width: 450px; 
 }
-
 .comunidad-p {
   font-size: 15px;
   font-family: "Lora-Regular";
