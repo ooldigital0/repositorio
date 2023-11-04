@@ -14,6 +14,8 @@
   max-width: 1440px;
   margin: 0 auto;
   margin-top: 2rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
 }
 
 
@@ -132,7 +134,7 @@ header .logo {
 
 .description, .astrologias-description {
   margin: 5rem 0;
-  font-size: 2.4em;
+  font-size: 2em;
   font-family: "Lora-Regular";
   font-weight: normal;
   color: #4A4A4A;
@@ -249,7 +251,7 @@ video {
 }
 
 .informes-title, .diseno-impulso__title, .sesiones-title, .tzolkin-title, .d-humano__title, .astrologias-title, .guia-lunar__title, .guia-ayurveda__title {
-  font-size: 3.6em;
+  font-size: 2.8em;
   font-family: "Cinzel-Medium";
   font-style: normal;
   font-weight: 400;
@@ -510,7 +512,6 @@ video {
   margin-top: 0.7vh;; 
   align-self: center;
 }
-
 .welcome-heart {
   width: 135px;
   margin-top: 1.3rem;

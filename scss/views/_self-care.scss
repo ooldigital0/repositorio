@@ -1,5 +1,5 @@
 .guia-lunar, .guia-ayurveda {
-    @include flex(row, null, center);
+    @include flex(row, null center);
     margin-bottom: 5rem;
 
     &__content {
