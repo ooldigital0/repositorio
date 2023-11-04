@@ -134,7 +134,7 @@ header .logo {
 
 .description, .astrologias-description {
   margin: 5rem 0;
-  font-size: 2em;
+  font-size: 1.9em;
   font-family: "Lora-Regular";
   font-weight: normal;
   color: #4A4A4A;
@@ -269,6 +269,8 @@ video {
   flex-direction: row;
   align-items: center;
   margin-bottom: 5rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
 }
 .guia-lunar__content, .guia-ayurveda__content {
   display: flex;
@@ -337,9 +339,9 @@ video {
 .tzolkin {
   display: flex;
   flex-direction: row;
-  justify-content: center;
   align-items: center;
   margin-top: 5rem;
+  margin-left: 4.5rem;
 }
 .tzolkin-content {
   display: flex;
